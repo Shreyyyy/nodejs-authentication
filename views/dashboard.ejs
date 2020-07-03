@@ -1,0 +1,25 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<a href="/user/logout" class="btn btn-secondary">Logout</a>
+<h3><center><%= user.name %>'s profile</center></h3>
+<table class="table">
+  <tr>
+    <td>Name:</td>
+    <td><%= user.name %></td>
+  </tr>
+  <tr>
+    <td>Address:</td>
+    <td><%= user.address %></td>
+  </tr>
+  <tr>
+    <td>LinkedIn:</td>
+    <td><%= user.linkedin %></td>
+  </tr>
+  <tr>
+    <td>Phone No:</td>
+    <td><%= user.phonenum %></td>
+  </tr>
+</table>
+<button class="lead mt-4">
+        <a href="/user/update-profile">Update Profile</a>
+</button>
